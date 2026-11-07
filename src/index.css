@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-forest: #123C2E;
+    --color-dark-green: #0B281F;
+    --color-cream: #F7F3E9;
+    --color-cream-light: #FAF8F2;
+    --color-charcoal: #171717;
+    --color-gold: #B89B63;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #F7F3E9;
+    color: #171717;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: 'Newsreader', Georgia, Cambria, 'Times New Roman', serif;
+  }
+
+  .font-brand {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Custom editorial aesthetics */
+.paper-shadow {
+  box-shadow: 0 20px 40px -15px rgba(11, 40, 31, 0.12), 0 0 0 1px rgba(18, 60, 46, 0.06);
+}
+
+.book-shadow {
+  box-shadow: -15px 25px 50px -12px rgba(11, 40, 31, 0.35), 0 10px 20px -5px rgba(11, 40, 31, 0.2);
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(to right, #B89B63, #E8D5B5, #B89B63) 1;
+}
